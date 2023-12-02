@@ -1,22 +1,20 @@
 {
   "name": "browser-storage-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "implementation for browser storage using localStorage ",
   "main": "./dist/index",
   "scripts": {
-    "test": "jest --watch",
-    "build": "tsc -p tsconfig.json"
+    "test": "jest",
+    "build": "tsc -d -p tsconfig.json --declarationMap"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.5",
     "@babel/preset-typescript": "^7.23.3",
     "@types/chrome": "^0.0.243",
-    "@types/webextension-polyfill": "^0.10.2",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-localstorage-mock": "^2.4.26",
-    "typescript": "^5.3.2",
-    "webextension-polyfill": "^0.10.0"
+    "typescript": "^5.3.2"
   },
   "jest": {
     "transform": {
