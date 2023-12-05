@@ -3,6 +3,8 @@
   "version": "1.0.1",
   "description": "implementation for browser storage using localStorage ",
   "main": "./dist/index",
+  "types": "./dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc -d -p tsconfig.json --declarationMap"

@@ -1,5 +1,11 @@
-const { getStorage, setStorage, removeStorage, clearStorage } = require("..");
 require("jest-localstorage-mock");
+
+const {
+  setStorage,
+  getStorage,
+  removeStorage,
+  clearStorage,
+} = require("../helpers");
 
 const dummyObject = {
   1: 1,
