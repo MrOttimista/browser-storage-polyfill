@@ -16,6 +16,6 @@
     "jsx": "react-jsx",
     "outDir": "dist"
   },
-  "include": ["src", "./src/**/*", "src/index.ts"],
+  "include": ["src", "src/**/*", "package.json", "README.md"],
   "exclude": ["build", "node_modules", "src/__tests__"]
 }
