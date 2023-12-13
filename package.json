@@ -1,12 +1,12 @@
 {
   "name": "browser-storage-polyfill",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "implementation for browser storage using localStorage ",
-  "main": "./dist/src",
-  "types": "./dist/index.d.ts",
+  "main": "dist/",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc -d -p tsconfig.json --declarationMap",
+    "build": "tsc -p tsconfig.json --outDir dist && tsc -p tsconfig.json --declaration --declarationDir dist",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

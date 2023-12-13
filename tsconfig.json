@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "noImplicitAny": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +17,6 @@
     "jsx": "react-jsx",
     "outDir": "dist"
   },
-  "include": ["src", "src/**/*", "package.json", "README.md"],
+  "include": ["src", "src/**/*", "package.json", "README.md", "index.ts"],
   "exclude": ["build", "node_modules", "src/__tests__"]
 }
