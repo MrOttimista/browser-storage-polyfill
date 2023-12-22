@@ -16,36 +16,36 @@ the same way you use the `chrome.storage` api
 import AsyncStorage from "browser-storage-polyfill";
 
 // local storage
-AsyncStorage.storage.local.set({ key: value }).then(() => {
+AsyncStorage.local.set({ key: value }).then(() => {
   console.log("Value is set");
   // do something
 });
 
-AsyncStorage.storage.local.get(["key"]).then((result) => {
+AsyncStorage.local.get(["key"]).then((result) => {
   console.log("Value currently is " + result.key);
   // do something
 });
 
 // sync storage
 
-AsyncStorage.storage.sync.set({ key: value }).then(() => {
+AsyncStorage.sync.set({ key: value }).then(() => {
   console.log("Value is set");
   // do something
 });
 
-AsyncStorage.storage.sync.get(["key"]).then((result) => {
+AsyncStorage.sync.get(["key"]).then((result) => {
   console.log("Value currently is " + result.key);
   // do something
 });
 
 // session storage
 
-AsyncStorage.storage.session.set({ key: value }).then(() => {
+AsyncStorage.session.set({ key: value }).then(() => {
   console.log("Value was set");
   // do something
 });
 
-AsyncStorage.storage.session.get(["key"]).then((result) => {
+AsyncStorage.session.get(["key"]).then((result) => {
   console.log("Value currently is " + result.key);
   // do something
 });
