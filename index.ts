@@ -3,7 +3,6 @@ import get from "./src/helpers/get";
 import remove from "./src/helpers/remove";
 import set from "./src/helpers/set";
 
-import "react";
 const polyFillStorage = {
   set: set,
   get: get,
